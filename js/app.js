@@ -14,14 +14,14 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3 class="title-card">${product?.title?.slice(0,25)}</h3>
+      <h3 class="title-card">${product?.title?.slice(0, 25)}</h3>
       <p>Category: ${product.category}</p>
+      <h2>Price: $ ${product.price}</h2>
       <p><i class="fas fa-user-plus icon-color"></i> Reviews: ${product.rating.count}</p>
       <p>
       <i class="fas fa-star color-orange"></i> 
       <i class="fas fa-star color-orange"></i>
       <i class="fas fa-star color-orange"></i> Rating: ${product.rating.rate}</p>
-      <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
       <button id="details-btn" class="btn btn-info text-white">Details</button></div>
       `;
