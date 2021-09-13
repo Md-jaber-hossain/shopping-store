@@ -17,8 +17,8 @@ const showProducts = (products) => {
       <h3 class="title-card">${product?.title?.slice(0, 25)}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
-      <p><i class="fas fa-user-plus icon-color"></i> Reviews: ${product.rating.count}</p>
-      <p><i class="fas fa-star color-orange"></i> Rating: ${product.rating.rate}</p>
+      <p><i class="fas fa-user-plus icon-color"></i> Total ratings: ${product.rating.count}</p>
+      <p><i class="fas fa-paper-plane color-orange"></i> Rating average: ${product.rating.rate}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
       <button id="details-btn" class="btn btn-info text-white">Details</button></div>
       `;
