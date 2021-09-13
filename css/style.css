@@ -2,9 +2,11 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* title color */
 .title-card{
   color: #286090; 
 }
+/* search field and button style */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -27,10 +29,10 @@ body {
   border-radius: 5px;
   margin-left: 125px;
 }
+/* cart style */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -52,7 +54,6 @@ body {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -62,6 +63,8 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+/* responsive for mobile device */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -80,6 +83,7 @@ body {
     padding-right: 10px;
   }
 }
+/* responsive for small mobile device */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;

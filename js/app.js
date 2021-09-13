@@ -3,7 +3,6 @@ const loadProducts = () => {
   showProducts(data);
 };
 
-
 // show all product in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
@@ -53,7 +52,7 @@ const updatePrice = (id, value) => {
 // set innerText function
 const setInnerText = (id, value) => {
   document.getElementById(id).innerText = parseFloat(value).toFixed(2);
-  
+
 };
 
 // update delivery charge and total Tax
