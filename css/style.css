@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.color-orange{
+  color: orange;
+}
 /* title color */
 .title-card{
   color: #286090; 

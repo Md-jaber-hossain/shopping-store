@@ -16,8 +16,12 @@ const showProducts = (products) => {
       </div>
       <h3 class="title-card">${product.title}</h3>
       <p>Category: ${product.category}</p>
-      <p>Total Ratings: ${product.rating.count}</p>
-      <h4>Average Rating: ${product.rating.rate}</h4>
+      <p>Total Review: <i class="fas fa-user-plus title-card"></i> ${product.rating.count}</p>
+      <p>Rating: <i class="fas fa-star color-orange"></i> 
+      <i class="fas fa-star color-orange"></i>
+      <i class="fas fa-star color-orange"></i>
+      <i class="fas fa-star color-orange"></i>
+      <i class="far fa-star"></i> ${product.rating.rate}</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
       <button id="details-btn" class="btn btn-info">Details</button></div>
